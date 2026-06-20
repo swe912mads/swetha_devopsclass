@@ -1,0 +1,14 @@
+name: Sample Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sample:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Message
+        run: echo "Hello World"
