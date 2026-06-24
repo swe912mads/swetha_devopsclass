@@ -1,0 +1,16 @@
+name: CI/CD Pipeline
+
+on: #on-default command
+  push: #push-the command will run when a push is made to the main branch
+    branches: #branches: specifies the branches that we will work on
+      - main
+
+jobs:
+  build:
+    runs-on: unbuntu-latest #runs-on: specifies the operating system that we will use to run the job
+    
+    steps:
+      - name: practice 
+        run: echo "Hello, World!" #run: specifies the command that we will run
+
+
